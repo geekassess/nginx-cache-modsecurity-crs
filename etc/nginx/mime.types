@@ -219,9 +219,7 @@ types {
     application/xslt+xml                  xsl;
     application/zip                       zip;
     text/calendar                         ics;
-    text/css                              css;
     text/csv                              csv;
-    text/html                             htm html shtml;
     text/markdown                         md markdown;
     text/mathml                           mml;
     text/plain                            txt;
