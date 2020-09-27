@@ -1,0 +1,14 @@
+version: "3.7"
+services:
+  waf:
+    image: geekassess/nginx-modsecurity-crs
+    restart: always
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ${NGINX_FILES_PATH:-./data}/modsecurity:/etc/modsecurity"
+      - ${NGINX_FILES_PATH:-./data}/modsecurity.d/include.conf:/etc/modsecurity.d/include.conf"
+      - ${NGINX_FILES_PATH:-./data}/modsecurity.d/modsecurity.conf:/etc/modsecurity.d/modsecurity.conf"
+      - ${NGINX_FILES_PATH:-./data}/nginx.conf:/etc/nginx/nginx.conf"
+    
