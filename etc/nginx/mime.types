@@ -93,8 +93,8 @@ types {
 	
 	application/x-font-ttf                           ttc;
     application/x-font-otf                           otf;
-    application/font-woff2                           woff2;
+    application/x-font-woff                           woff2;
     application/x-font-ttf                           ttf;
-	application/font-woff                            woff;
+	application/x-font-woff                           woff;
 
 }
